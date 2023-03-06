@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
 
   def show
-    @post = Post.friendly.find(params[:id])
+
   end
 
 
@@ -26,12 +26,10 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.friendly.find(params[:id])
+    
   end
 
   def update
-    @post = Post.friendly.find(params[:id])
-
     if @post.update(post_params)
       redirect_to @post
     else
@@ -41,17 +39,17 @@ class PostsController < ApplicationController
 
 
   def destroy
-    @post = Post.friendly.find(params[:id])
     @post.destroy
 
     redirect_to root_path, status: :see_other
   end
 
+  private
   def set_post
     @post = Post.friendly.find(params[:id])
   end
 
-  private
+  
     def post_params
       params.require(:post).permit(:title, :body)
     end
