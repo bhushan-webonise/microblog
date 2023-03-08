@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   extend FriendlyId
+  has_many :comments
   validates :title, presence: true
   validates :body, presence: true, length: { minimum: 5 }
   friendly_id :title, use: %i[slugged]

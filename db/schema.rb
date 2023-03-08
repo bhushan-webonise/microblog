@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_06_131745) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_08_140253) do
+  create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.text "body"
+    t.integer "post_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["post_id"], name: "index_comments_on_post_id"
+  end
+
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string "slug", null: false
     t.integer "sluggable_id", null: false
@@ -28,7 +37,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_06_131745) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.boolean "is_published", default: false
     t.index ["slug"], name: "index_posts_on_slug", unique: true
   end
 
+  add_foreign_key "comments", "posts"
 end
