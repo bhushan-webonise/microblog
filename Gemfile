@@ -8,6 +8,15 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 gem 'devise'
 
+gem 'simplecov', require: false, group: :test
+
+group :development, :test do
+  # There may be other lines in this block already. Simply append the following after:
+  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+      gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main' # Previously '4-0-dev' or '4-0-maintenance' branch
+  end
+end
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
