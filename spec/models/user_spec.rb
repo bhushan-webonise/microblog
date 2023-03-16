@@ -20,10 +20,8 @@ RSpec.describe User, type: :model do
 
     it "ensures that valid email" do
       user=User.new(email: "bhushan@webo.com",password:"bhushan@123") 
-     
-      expect(user).to be_valid
-     
+      expect(user).to be_valid 
     end      
-
   end
 end
+

@@ -1,5 +1,4 @@
 require 'rails_helper'
-
 RSpec.describe Post, type: :model do
   context 'checking method' do
     it "searching by title " do
@@ -15,4 +14,5 @@ RSpec.describe Post, type: :model do
     end
   end
 end
+
 

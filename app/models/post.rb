@@ -8,3 +8,4 @@ class Post < ApplicationRecord
     title_changed? || slug.blank?
   end
 end
+
