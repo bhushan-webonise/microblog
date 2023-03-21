@@ -1,31 +1,22 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/bhushang/Desktop/TDD/tdd/microblog/spec/models/user_spec.rb": {
+      "/home/bhushang/Desktop/TDD/tdd/microblog/spec/models/post_spec.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
           1,
           1,
           1,
-          null,
-          null,
           1,
-          1,
-          1,
-          1,
+          0,
           null,
           null,
           1,
           1,
           1,
-          null,
-          null,
           1,
-          1,
-          null,
           1,
           null,
           null,
@@ -101,6 +92,7 @@
           null,
           null,
           1,
+          null,
           null,
           null,
           null
@@ -605,9 +597,9 @@
           null,
           null,
           null,
-          0,
+          1,
           null,
-          0,
+          1,
           null,
           null,
           null,
@@ -752,6 +744,7 @@
           null,
           1,
           null,
+          null,
           null
         ]
       },
@@ -773,8 +766,62 @@
           1,
           null
         ]
+      },
+      "/home/bhushang/Desktop/TDD/tdd/microblog/app/models/post.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/bhushang/Desktop/TDD/tdd/microblog/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1678875666
+    "timestamp": 1679393939
   }
 }

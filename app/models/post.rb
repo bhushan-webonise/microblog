@@ -7,5 +7,13 @@ class Post < ApplicationRecord
   def should_generate_new_friendly_id?
     title_changed? || slug.blank?
   end
+
+  def self.sort_post
+    Post.all.sort_by(&:title)
+  end
+
+  def self.srch_post
+    Post.search(&:title)
+  end
 end
 
