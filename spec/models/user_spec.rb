@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   context 'validations' do
     it "ensures the presence of a email" do
-      user = User.new(email: "bhushan@webonise.com").save
+      user = User.new(email: "").save
       expect(user).to eq(false)
     end
 
